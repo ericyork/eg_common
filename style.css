@@ -1,0 +1,86 @@
+body {
+  margin: 0; /*--removes default margin, allowing footer and nav to align evenly --*/
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /*--thanks for the snippet goes to http://css-tricks.com/snippets/css/system-font-stack/ --*/
+  font-size: 15px;
+}
+nav {
+  background-color: #333; /*--sets dark gray background color--*/
+  color: #CCC; /*--sets text color to light gray--*/
+  padding: 20px 30px; /*--adds space inside the nav--*/
+}
+nav h1, nav p { /*--collapses lines spacing in the nav--*/
+  margin-top: 0;
+  margin-bottom: 0;
+}
+footer {
+  background-color: #333;
+  color: #CCC;
+  text-align: center;
+  /*--the next two rules force the footer to "stick" to the page bottom--*/
+  position: fixed;
+  bottom: 0;
+  width: 100%; /*--needed to make footer span the body --*/
+}
+section {
+  margin: 0 30px;
+}
+.spacer {
+  height: 50px;
+}
+.material-icons.md-48 {
+font-size: 48px !important;
+height: 48px !important;
+width: 48px !important;
+}
+.fa {
+  color: green;
+}
+.fa:hover {
+  color: lightgreen;
+}
+.material-icons {
+  color: green;
+}
+.material-icons:hover {
+  color: lightgreen;
+}
+/*
+/-- STYLES FOR DEMONSTRATION --/
+*/
+ul {
+  list-style: none;
+  line-height: 2;
+}
+li {
+  display: inline-block;
+  margin: 30px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.buttons li {
+  background-color: #DDD;
+}
+.buttons li:hover {
+  background-color: #CCC;
+}
+.thumbs li {
+  background-image: url('record.jpg');
+  width: 180px;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all .25s ease-in-out;
+  box-shadow: 1px 1px 4px rgba(125,125,125,0.25),
+              -1px -1px 4px rgba(125,125,125,0.25),
+              -1px 1px 4px rgba(125,125,125,0.25),
+              1px -1px 4px rgba(125,125,125,0.25);
+}
+.thumbs li:hover {
+  box-shadow: 1px 1px 22px rgba(125,125,125,0.25),
+              -1px -1px 22px rgba(125,125,125,0.25),
+              -1px 1px 22px rgba(125,125,125,0.25),
+              1px -1px 22px rgba(125,125,125,0.25);
+}
